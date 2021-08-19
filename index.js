@@ -33,12 +33,17 @@ const getSelectedNumber = function(){
     return document.querySelector(".selected")
 }
 
-const random = function(){
-    let x = Math.floor(Math.random() * 76)
-    console.log(x)
-    return x
+/* const random = function(){
+    let randomNumber = Math.floor(Math.random() * 76)
+    console.log(randomNumber)
+    return randomNumber
+ 
+} */
+const randomNumber = function(){
+    let randomNumber = Math.floor(Math.random() * 76)
 
-    
+    let number = document.getElementById(randomNumber)
+    number.classList.add("selected")
 }
 
 window.onload = function() {

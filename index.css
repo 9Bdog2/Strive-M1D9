@@ -51,7 +51,6 @@ h1 {
 }
 
 #container {
-    min-height: 200px;
     text-align: center;
 }
 #container h2 {
@@ -66,13 +65,9 @@ h1 {
 }
 
 #randomise input{
-    height: 32px;
-    background-color: #0f0f0f;
     border: solid 3px #5784ff;
-    color: white;
-    padding: 8px;
     border-radius: 4px;
-    font-size: larger;
+    font-size: larger
 }
 
 #randomise input[type="button"]{

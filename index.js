@@ -33,7 +33,10 @@ const getSelectedNumber = function(){
 }
 
 const random = function(){
-    alert("Clicked")
+    let x = Math.floor(Math.random() * 76)
+    console.log(x)
+
+    
 }
 
 window.onload = function() {

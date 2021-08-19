@@ -3,14 +3,14 @@ const displayEntireBoard = function(){
     let boardContainerNode = document.getElementById("bingo-board")
 
     for (let number = 1; number <= 76; number++) {
-
+        //Creating 76 Bingo Numbers
         let newNumberNode = document.createElement("div") 
         newNumberNode.innerText = number 
         newNumberNode.id = number 
         newNumberNode.classList.add("number") 
-
+        // Set "selectNumber" function as a listener for the "click" event
         newNumberNode.onclick = selectNumber
-
+        //Attaching to the DOM
         boardContainerNode.appendChild(newNumberNode)
     }
 }
@@ -29,17 +29,20 @@ const selectNumber = function(eventData){
 }
 
 const getSelectedNumber = function(){
+    // this will find the first element in the page that has the "selected" class assigned, if any
     return document.querySelector(".selected")
 }
 
 const random = function(){
     let x = Math.floor(Math.random() * 76)
     console.log(x)
+    return x
 
     
 }
 
 window.onload = function() {
-    getSelectedNumber()
     displayEntireBoard()
+    selectNumber()
+    getSelectedNumber()
 }

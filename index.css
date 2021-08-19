@@ -1,6 +1,6 @@
 body {
-    background-color: black;
-    color: white;
+    background-color: #a7a7a7;
+    color: #4331a7;
     font-family: 'Style Script', cursive;
     max-width: 1280px;
     margin: 0 auto;
@@ -26,7 +26,7 @@ h1 {
 }
 
 .number {
-    background-color: #0f0f0f;
+    background-color: #fff9f9;
     display: inline-block;
     width: 4%;
     min-height: 64px;
@@ -42,7 +42,8 @@ h1 {
 }
 
 .number:hover {
-    border-color: gray;
+    border-color: rgb(0, 17, 255);
+    
 }
 
 .number.selected {
@@ -72,7 +73,6 @@ h1 {
 
 #randomise input[type="button"]{
     margin-left: 10px;
-    width: 92px;
     height: 54px;
     color: rgb(32, 32, 32);
     background-color: #317bea;

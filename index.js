@@ -15,7 +15,7 @@ const displayEntireBoard = function(){
     }
 }
 
-const selectNumber = function(eventData){
+/* const selectNumber = function(eventData){
     // DESELECT THE CURRENTLY SELECTED Number
     let currentSelectedNumber = getSelectedNumber
     if(currentSelectedNumber !== null){
@@ -31,17 +31,12 @@ const selectNumber = function(eventData){
 const getSelectedNumber = function(){
     // this will find the first element in the page that has the "selected" class assigned, if any
     return document.querySelector(".selected")
-}
-
-/* const random = function(){
-    let randomNumber = Math.floor(Math.random() * 76)
-    console.log(randomNumber)
-    return randomNumber
- 
 } */
-const randomNumber = function(){
-    let randomNumber = Math.floor(Math.random() * 76)
 
+const randomNumber = function(){
+    //get random number
+    let randomNumber = Math.floor(Math.random() * 76)
+    //assign random number to
     let number = document.getElementById(randomNumber)
     number.classList.add("selected")
 }
@@ -51,3 +46,6 @@ window.onload = function() {
     selectNumber()
     getSelectedNumber()
 }
+
+
+
